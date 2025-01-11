@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head') %>
+        <title>Quiz</title>
+    </head>
+    
+<!-- quiz.ejs -->
+
+<!-- Inside your form -->
+<body>
+    <%- include('./partials/nav') %>
+    <div class="container mt-3 mb-3">
+    <form action="/quiz" method="post">
+        <label for="subject">Enter subject</label>
+        <input type="text" required name="subject">
+        <div>
+            <ol>
+                <li><label for="questionA">Enter first question</label>
+                    <input type="text" required name="question">
+                    <ol >
+                        <li class="quiz">
+                    
+                            <input type="text" required name="option1" placeholder="Enter option 1"></input></input>
+                        </li>
+                        <li>
+                    
+                            <input type="text" required name="option2" placeholder="Enter option 2">
+                        </li>
+                        <li>
+                    
+                            <input type="text" required name="option3" placeholder="Enter option 3"></input></input>
+                        </li>
+                        <li>
+                    
+                            <input type="text" required name="option4" placeholder="Enter option 4">
+                        </li>
+                     
+                    </ol>
+                </li>
+                <li><label for="question 2">Enter Theory Question</label>
+                    <input type="text" required name="question2"></li>
+                
+            </ol>
+<input type="submit" class="btn btn-primary" value="submit">
+        </div>
+    </form>  
+    </div>         
+</body>
+
+<footer>
+    <div class="copyright">
+      <p>&copy 2024 - Organisation</p>
+    </div>
+    <div class="social">
+      <a href="contact.ejs" class="support">Contact Us</a>
+    </div>
+  </footer>
+
+    <%- include("./partials/scripts") %> 
+
+</html>

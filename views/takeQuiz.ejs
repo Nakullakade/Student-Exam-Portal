@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head') %>
+        <title>Attempt Quiz</title>
+    </head>
+    <body>
+        <%- include('./partials/nav') %>
+        <div class="container mt-3">
+            <h1>Subject: <%=quiz.subject%></h1>
+            <h5>Q.1 <%=quiz.question%></h5>
+            <input type="checkbox" value="option1">
+            <label>1. <%=quiz.option.option1%></label>
+            <br>
+            <input type="checkbox" value="option2">
+            <label>2. <%=quiz.option.option2%></label>
+            <br>
+            <input type="checkbox" value="option3">
+            <label>3. <%=quiz.option.option3%></label>
+            <br>
+            <input type="checkbox" value="option4">
+            <label>4. <%=quiz.option.option4%></label>
+            <br><br>
+            <h5>Q.2 <%=quiz.question2%></h5>
+            <textarea name="question2" class="form-control" id="floatingTextarea" cols="50" rows="5" placeholder="Enter Your Answer Here"></textarea>
+            <br><br>
+            <div class="button">
+                <a href="/result">Submit</a>
+              </div>
+             
+</div>
+        <%- include("./partials/scripts") %> 
+    </body>
+    <footer>
+        <div class="copyright">
+          <p>&copy 2024 - Organisation</p>
+        </div>
+        <div class="social">
+          <a href="contact.ejs" class="support">Contact Us</a>
+        </div>
+      </footer>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Sign up</title>
+  <%- include('./partials/head') %>
+
+</head>
+
+<body>
+  <%- include('./partials/nav') %>
+
+  <div class="container_01 flex">
+    <div class="facebook-page flex">
+      <div class="text">
+        <h1>Exam Form Manegment Tool</h1>
+        <p>Take control of your exams </p>
+        <p>and achieve your goals</p>
+      </div>
+      <div class="login_b
+          ox">
+        <form action="/signup" method="post">
+          <h2>Create New Account</h2>
+          <br>
+          <input type="text" placeholder="Enter Full Name" required name="fullName">
+          <input type="email" placeholder="Email or phone number" required name="email">
+          <input type="date" id="birthday" required name="birthday">
+          <input type="text" placeholder="Enter Gender" required name="gender">
+          <input type="password" placeholder="Create Password" required name="password">
+          <input type="password" placeholder="Confirm Password" required name="confirmPassword">
+
+          <div class="gender-container">
+            <input type="checkbox" id="myCheckbox" name="newsletter">
+           <label for="myCheckbox">Agree terms and conditions</label>
+           
+      </div>
+
+          <div class="link">
+            <button type="submit" class="login">Submit</button>
+
+          </div>
+          <hr>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="copyright">
+      <p>&copy 2024 - Organisation</p>
+    </div>
+    <div class="social">
+      <a href="#" class="support">Contact Us</a>
+    </div>
+  </footer>
+  
+  
+  
+    
+  <%- include("./partials/scripts") %> 
+
+  </body>
+  
+  </html>
+
+
+
+
+  
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<header>
+<div class="container">
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="">
+       <h2><span>E</span>xamPortal</h2>
+      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+     <li><a href="/logout">Logout</a></li>
+    <li><a href="/signin">Signin</a></li>
+    <li><a href="/FAQ">FAQ</a></li>
+        <li><a href="/contact">ABOUT</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+<% if (locals.error){ %>
+    <div class="container mt-4">
+    <div class="alert alert-danger" role="alert">
+      <%=locals.error %>
+    </div></div>
+  <% } %>

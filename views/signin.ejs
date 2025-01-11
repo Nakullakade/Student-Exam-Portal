@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>sign in</title>
+    
+  
+    <%- include('./partials/head') %>
+    
+  
+  </head>
+  
+
+<body>
+  <%- include('./partials/nav') %>
+
+  <div class="container_01 flex">
+    <div class="facebook-page flex">
+      <div class="text">
+        <h1>Exam Form Manegment Tool</h1>
+        <p>Take control of your exams </p>
+        <p>and achieve your goals</p>
+      </div>
+      <div class="login_box">
+        <form action="/signin" method="post">
+          <input type="email" placeholder="Email or phone number" required name="email">
+          <input type="password" placeholder="Password" required name="password">
+          <div class="link">
+            <button type="submit" class="login">Login</button>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+          <hr>
+          <div class="button">
+            <a href="/signup">Create new account</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <%- include("./partials/scripts") %> 
+
+</body>
+
+</html>

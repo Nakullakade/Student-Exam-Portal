@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Contact Us</title>
+    <%- include('./partials/head') %>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    <br>
+    <h1 style="text-align: center;">Contact Us</h1>
+    <main>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+        </form>
+
+        <div id="successMessage" style="display: none;">
+            <p>Your message has been sent successfully!</p>
+        </div>
+    </main>
+     <footer>
+  <div class="copyright">
+    <p>&copy 2024 - Organisation</p>
+  </div>
+  <div class="social">
+    <a href="#" class="support">Contact Us</a>
+  </div>
+</footer>
+
+
+
+   <%- include('./partials/scripts') %> 
+</body>
+</html>

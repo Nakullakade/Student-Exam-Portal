@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FAQ</title>
+    <%- include('./partials/head') %>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    <br>
+    <h1 style="text-align: center;">Frequnetly Asked Questions</h1>
+
+
+<main>
+    <div class="faq-section">
+        <h2 class="question" onclick="toggleAnswer('answer1')">How do I create a new exam form?</h2>
+        <div id="answer1" class="answer">
+            <p>To create a new exam form, log in to your account and navigate to the 'Create Exam' section. Follow the
+                on-screen instructions to fill in the details, set up questions, and configure exam settings. Once
+                done, save the form, and it will be ready for use.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2 class="question" onclick="toggleAnswer('answer2')">Can I edit an already created exam form?</h2>
+        <div id="answer2" class="answer">
+            <p>Yes, you can edit an existing exam form. Go to the 'Manage Exams' section, find the exam form you want to
+                edit, and click on the 'Edit' button. Make the necessary changes and save the form to update it.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2 class="question" onclick="toggleAnswer('answer3')">How can I view exam results?</h2>
+        <div id="answer3" class="answer">
+            <p>To view exam results, navigate to the 'Results' tab on your dashboard. You will find a list of
+                completed exams with corresponding result details. Click on a specific exam to view detailed results
+                and analytics.</p>
+        </div>
+    </div>
+    <div class="faq-section">
+<h2 class="question" onclick="toggleAnswer('answer4')">How do I invite students to take an exam?</h2>
+<div id="answer4" class="answer">
+    <p>To invite students to take an exam, go to the 'Manage Exams' section, find the desired exam, and click on the
+        'Invite Students' button. You can then select students or share a unique link for them to access the exam.</p>
+</div>
+</div>
+
+<div class="faq-section">
+<h2 class="question" onclick="toggleAnswer('answer5')">What types of questions can I include in an exam form?</h2>
+<div id="answer5" class="answer">
+    <p>You can include various question types such as multiple-choice, true/false, short answer, and essay questions
+        in your exam form. Choose the appropriate question type when creating or editing the questions for your exam.</p>
+</div>
+</div>
+
+<div class="faq-section">
+<h2 class="question" onclick="toggleAnswer('answer6')">Is there a limit to the number of students who can take an exam?</h2>
+<div id="answer6" class="answer">
+    <p>No, there is no strict limit on the number of students who can take an exam. However, consider the technical
+        specifications and server capacity to ensure a smooth experience for all participants.</p>
+</div>
+</div>
+<!-- Additional FAQ sections -->
+<div class="faq-section">
+<h2 class="question" onclick="toggleAnswer('answer7')">How can I schedule exams for a specific date and time?</h2>
+<div id="answer7" class="answer">
+    <p>To schedule exams, navigate to the 'Schedule Exams' section in your dashboard. Choose the exam you want to
+        schedule, and set the date and time parameters. The system will automatically handle exam availability based
+        on your settings.</p>
+</div>
+</div>
+
+<div class="faq-section">
+<h2 class="question" onclick="toggleAnswer('answer8')">Can I customize the appearance of the exam forms?</h2>
+<div id="answer8" class="answer">
+    <p>Yes, you can customize the appearance of your exam forms. In the 'Form Settings' or 'Design' section, you can
+        modify colors, fonts, and add branding elements to match your institution's or organization's visual
+        identity.</p>
+</div>
+</div>
+
+<div class="faq-section">
+<h2 class="question" onclick="toggleAnswer('answer9')">What security measures are in place to prevent cheating during exams?</h2>
+<div id="answer9" class="answer">
+    <p>The Exam Portal employs various security measures, including randomizing question order, time limits, and
+        anti-cheating algorithms. Additionally, the system may support features like secure browser mode to minimize
+        cheating possibilities.</p>
+</div>
+</div>
+
+<!-- Add more FAQ sections as needed -->
+
+
+    <!-- Add more FAQ sections as needed -->
+
+</main>  
+<footer>
+    <div class="copyright">
+      <p>&copy 2024 - Organisation</p>
+    </div>
+    <div class="social">
+      <a href="contact.html" class="support">Contact Us</a>
+    </div>
+  </footer>
+  <%- include('./partials/scripts') %>
+</body>
+</html>
